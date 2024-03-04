@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background-container {
+    width: 100%;
+    height: 150px;
+    background: hsl(180, 29%, 50%);
+}
+
+.background-image-container {
+    width: 100%;
+    height: 150px;
+    background-image: url("/bg-header-desktop.svg");
+}
+
+.job-tags {
+    @apply bg-light_grayish_cyan_filter cursor-pointer px-2 py-2 rounded-md lg:h-max hover:bg-desaturated_darkcyan hover:text-white;
+}
+
+@media only screen and (max-width: 425px) {
+    .background-image-container {
+        width: 100%;
+        height: 150px;
+        background-image: url("/bg-header-mobile.svg");
+    }
+}
