@@ -9,7 +9,7 @@ const JobCard = ({job, handleFilters}) => {
             <div className="w-[6px] h-full bg-desaturated_darkcyan rounded-bl-lg rounded-tl-lg absolute left-0 top-0"/>
         )}
 
-        <img src={job.logo} alt={`${job.company} Logo`} className="absolute w-14 -top-7 left-7 sm:w-20 sm:-top-10 lg:relative lg:top-0 lg:left-0 lg:h-20 lg:w-20 lg:ml-4"/>
+        <img src={`/job-listings${job.logo}`} alt={`${job.company} Logo`} className="absolute w-14 -top-7 left-7 sm:w-20 sm:-top-10 lg:relative lg:top-0 lg:left-0 lg:h-20 lg:w-20 lg:ml-4"/>
 
         <div className="flex flex-col sm:flex-row w-full">
             {/* JOB INFO */}
