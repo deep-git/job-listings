@@ -19,7 +19,7 @@ function App() {
   }
 
   data.forEach(job => {
-    let jobFilterTypes = [job.role, job.level, ...job.languages];
+    let jobFilterTypes = [job.role, job.level, ...job.languages, ...job.tools];
     if (filters.every(type => jobFilterTypes.includes(type))) {
       filteredJobTags.push(job);
     }
